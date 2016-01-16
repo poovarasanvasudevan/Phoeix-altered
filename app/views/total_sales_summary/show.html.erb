@@ -1,0 +1,36 @@
+<form name="language_report" id="language_report">
+  <div class="col-md-12">
+    <div class="col-md-4">
+      <label>Language : </label>
+
+      <select class="form-control select-box">
+        <% @language.each do |c| %>
+            <option><%= c.name %></option>
+        <% end %>
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <label>StartDate : </label>
+      <input type="text" name="start_date" id="start_date" class="datetimepicker form-control">
+    </div>
+
+
+    <div class="col-md-4">
+      <label>End Date : </label>
+      <input type="text" name="end_date" id="end_date" class="datetimepicker form-control">
+    </div>
+  </div>
+  <div class='col-md-12 center-block'>
+    <input type="submit" name="language_submit" value="Search">
+  </div>
+</form>
+
+<script>
+  $(function () {
+    $('.select-box').select2();
+    $('#language_report').submit(function() {
+      alert('hahah')
+    });
+  });
+</script>
