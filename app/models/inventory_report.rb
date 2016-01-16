@@ -40,6 +40,7 @@ class InventoryReport < ActiveType::Object
                   product, products[product][0],
                   products[product][1],
                   products[product][2],
+                  #'My Lang',
                   master[loc][product]['opening_stock'],
                   master[loc][product]['inventory_in'],
                   master[loc][product]['inventory_out'],

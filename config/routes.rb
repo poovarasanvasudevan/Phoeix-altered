@@ -51,6 +51,7 @@ Rails.application.routes.draw do
 
 
   get '/total-sales-summary'=>'total_sales_summary#show'
+  get '/total-sales-summary-report'=>'total_sales_summary#constructdatatable'
   # AWS health check
   get '/ping' => 'ping#show'
   # get '/sales' => 'reports#index'
